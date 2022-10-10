@@ -1,0 +1,135 @@
+/* Sameh Elmeligy 406 */
+.lineSearch {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.icon {
+    background-color: #ff9800;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    background-color: #ff9800;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: .3s linear;
+}
+
+.open .input {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+input {
+    width: 100%;
+    transition: .3s linear;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    background: #100a00a3;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: white;
+}
+
+input:focus-visible {
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+}
+
+.open input {
+    width: 100%;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+    background: #ff9800;
+    padding: 40px 40px;
+}
+
+.card {
+    width: 48%;
+}
+
+.icon p {
+    display: none;
+}
+
+.icon i {
+    display: flex;
+}
+
+.open .icon i {
+    display: none;
+}
+
+.open .icon p {
+    display: flex;
+    align-items: center;
+    margin: 0%;
+}
+.card{
+    border: 0;
+}
+.card-body {
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+.card-text{
+    color: #999;
+}
+.btnS{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.btnS .btn{
+    background-color: #333;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+}
+.btnS .btn:hover{
+    background-color: #ff9800;
+    color: white;
+}
+.card-title{
+    text-transform: capitalize;
+}
+.card-text{
+    text-transform: capitalize;
+}
+button.search {
+    margin-left: 15px;
+    padding: 4px 20px;
+    background: #333;
+    color: white;
+    border: 1px solid #ff9800;
+    transition: .4s linear;
+}
+.search:hover{
+    background-color: transparent;
+    border: 1px solid #333;
+}
+.noFound {
+    margin: auto;
+    font-size: 4rem;
+    color: white;
+    padding: 100px 0;
+}
